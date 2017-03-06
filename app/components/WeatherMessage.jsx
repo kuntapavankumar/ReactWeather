@@ -17,9 +17,9 @@ var React = require('react');
 //   }
 // );
 
-var WeatherMessage = ({temp, location}) => {  
+var WeatherMessage = ({temp, location}) => {
   return (
-        <h1>Weather in {location} is {temp}</h1>
+        <h1 className="text-center">Weather in {location} is {temp}</h1>
   );
 }
 
