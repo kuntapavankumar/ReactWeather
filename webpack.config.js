@@ -1,8 +1,8 @@
 var webpack = require('webpack');
 module.exports={
   entry: [
-         'script!jquery/dist/jquery.min.js', 
-         'script!foundation-sites/dist/foundation.min.js', 
+         'script!jquery/dist/jquery.min.js',
+         'script!foundation-sites/dist/foundation.min.js',
          './app/app.jsx'],
   output: {
     path: __dirname,
@@ -17,7 +17,7 @@ module.exports={
     'jQuery': 'jquery'
    })
   ],
-  
+
   resolve: {
     root: __dirname,
     alias: {
@@ -29,7 +29,8 @@ module.exports={
       WeatherForm: 'app/components/WeatherForm.jsx',
       WeatherMessage: 'app/components/WeatherMessage.jsx',
       Temp: 'app/components/Temp.jsx',
-      openWeatherMap: 'app/api/openWeatherMap.jsx'
+      openWeatherMap: 'app/api/openWeatherMap.jsx',
+      ErrorModal: 'app/components/ErrorModal.jsx'
     },
     extensions: ['','.js','.jsx']
   },
@@ -47,4 +48,3 @@ module.exports={
   },
   devtool: 'cheap-module-eval-source-map'
 }
-
